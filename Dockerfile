@@ -16,6 +16,7 @@ RUN \
 	&& mkdir -p /defaults \
 	&& gzip -d cloud-torrent.gz \
 	&& mv /tmp/cloud-torrent /defaults/cloud-torrent \
+	&& chmod +x /defaults/cloud-torrent \
 	&& apk del curl \
 	&& rm -rf /tmp
 
