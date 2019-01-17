@@ -24,5 +24,5 @@ RUN \
 COPY root/ /
 
 # ports and volumes
-EXPOSE 3099
+EXPOSE $PORT
 VOLUME /mnt

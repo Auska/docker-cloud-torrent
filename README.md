@@ -4,12 +4,12 @@ http://blog.auska.win
 ## Usage
 
 ```
-docker create --name=baidupcs \
+docker create --name=cloud-torrent \
 -v <path to downloads>:/mnt \
 -e PGID=<gid> -e PUID=<uid> \
 -e TZ=<timezone> \
--p 999:999 \
-auska/docker-baidupcs
+-p 3099:3099 \
+auska/cloud-torrent
 ```
 
 ### User / Group Identifiers
@@ -25,5 +25,4 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Versions
 
-+ **3.5.7:** Rebase to alpine linux 3.8.
-+ **3.5.8:** Update 3.5.8.
++ **0.8.25:** Rebase to alpine linux 3.8.
