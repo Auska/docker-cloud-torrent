@@ -6,10 +6,11 @@ http://blog.auska.win
 ```
 docker create --name=cloud-torrent \
 -v <path to downloads>:/mnt \
+-v <path to config>:/config \
 -e PGID=<gid> -e PUID=<uid> \
 -e TZ=<timezone> \
 -p 3099:3099 \
-auska/cloud-torrent
+auska/docker-cloud-torrent
 ```
 
 ### User / Group Identifiers

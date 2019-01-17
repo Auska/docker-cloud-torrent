@@ -3,4 +3,4 @@
 chmod a+x /defaults/cloud-torrent
 
 exec \
-	s6-setuidgid abc /defaults/cloud-torrent -p $PORT
+	s6-setuidgid abc /defaults/cloud-torrent -p $PORT -a $PASSWD -c /config/cloud-torrent.json
