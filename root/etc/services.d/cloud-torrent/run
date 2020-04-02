@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bash
 
-chmod a+x /defaults/cloud-torrent
+chmod a+x /usr/local/bin/cloud-torrent
 
 exec \
 	s6-setuidgid abc /usr/local/bin/cloud-torrent -p $PORT -a $AUTH -c /config/cloud-torrent.json
