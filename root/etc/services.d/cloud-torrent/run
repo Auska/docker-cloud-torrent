@@ -3,4 +3,4 @@
 chmod a+x /usr/local/bin/cloud-torrent
 
 exec \
-	s6-setuidgid abc /usr/local/bin/cloud-torrent -p $PORT -a $AUTH -c /config/cloud-torrent.json
+	s6-setuidgid abc /usr/local/bin/cloud-torrent -p $PORT -a $AUTH -c /config/cloud-torrent.yaml
