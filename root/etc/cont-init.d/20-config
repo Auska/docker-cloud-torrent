@@ -2,6 +2,10 @@
 
 mkdir -p /downloads /watch /config
 
+# copy config
+[[ ! -f /config/cloud-torrent.yaml ]] && cp \
+	/defaults/cloud-torrent.yaml /config/cloud-torrent.yaml
+
 # permissions
 chown abc:abc -R \
 	/downloads \
