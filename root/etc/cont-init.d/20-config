@@ -1,9 +1,9 @@
 #!/usr/bin/with-contenv bash
 
-mkdir -p /defaults /mnt /config
+mkdir -p /downloads /watch /config
 
 # permissions
 chown abc:abc -R \
-	/defaults \
-	/mnt \
+	/downloads \
+	/watch \
 	/config

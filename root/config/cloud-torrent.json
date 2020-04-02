@@ -1,8 +1,13 @@
-{
-  "AutoStart": true,
-  "DisableEncryption": false,
-  "DownloadDirectory": "/mnt",
-  "EnableUpload": true,
-  "EnableSeeding": false,
-  "IncomingPort": 50055
-}
+autostart: true
+donecmd: ""
+donecmdthreshold: 30s
+downloaddirectory: /downloads
+enableupload: true
+incomingport: 50007
+obfspreferred: true
+obfsrequirepreferred: false
+proxyurl: ""
+scraperurl: https://raw.githubusercontent.com/boypt/simple-torrent/master/scraper-config.json
+seedratio: 0
+trackerlisturl: https://trackerslist.com/best.txt
+watchdirectory: /watch
